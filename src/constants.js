@@ -10,6 +10,16 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/24/solid";
 
+import CatImage from "./assets/images/cat.png";
+import ChinchillaImage from "./assets/images/chinchilla.png";
+import DogImage from "./assets/images/dog.png";
+import FerretImage from "./assets/images/ferret.png";
+import FishImage from "./assets/images/fish.png";
+import HorseImage from "./assets/images/horse.png";
+import ParrotImage from "./assets/images/parrot.png";
+import RabbitImage from "./assets/images/rabbit.png";
+import TurtleImage from "./assets/images/turtle.png";
+import SwanImage from "./assets/images/swan.png";
 
 export const CategoriesDropdownList = [
   {
@@ -93,8 +103,64 @@ export const PopularSearches = [
   }
 ]
 
+export const PopularCategories = [
+  { 
+    name: "Cat",
+    image_url: CatImage,
+    total_ads: 12
+  },
+  {
+    name: "Chinchilla",
+    image_url: ChinchillaImage,
+    total_ads: 2
+  },
+  { 
+    name: "Swan",
+    image_url: SwanImage,
+    total_ads: 15 
+  },
+  { 
+    name: "Ferret",
+    image_url: FerretImage,
+    total_ads: 4
+  },
+  { 
+    name: "Parrot",
+    image_url: ParrotImage,
+    total_ads: 25 
+  },
+  { 
+    name: "Dog",
+    image_url: DogImage,
+    total_ads: 14
+  },
+  { 
+    name: "Fish",
+    image_url: FishImage,
+    total_ads: 8
+  },
+  { 
+    name: "Rabbit",
+    image_url: RabbitImage,
+    total_ads: 17 
+  },
+  { 
+    name: "Turtle",
+    image_url: TurtleImage,
+    total_ads: 4
+  },
+  { 
+    name: "Horse",
+    image_url: HorseImage,
+    total_ads: 20 
+  }
+]
+
+
+
 export default {
   CategoriesDropdownList,
   SellMenuItems,
   PopularSearches,
+  PopularCategories,
 }

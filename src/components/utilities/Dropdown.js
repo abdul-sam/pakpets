@@ -13,7 +13,7 @@ import {
 } from "@heroicons/react/24/outline";
 
  
-const Dropdown = ({title, klasses, ulKlasses, dropdownItems}) => {
+const Dropdown = ({icon, title, klasses, ulKlasses, dropdownItems}) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = dropdownItems.map(
@@ -63,7 +63,7 @@ const Dropdown = ({title, klasses, ulKlasses, dropdownItems}) => {
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
-              {title}
+              {icon && <img src={icon} className="h-4 w-4"/>} {title}
               <ChevronDownIcon
                 strokeWidth={2.5}
                 className={`hidden h-3 w-3 transition-transform lg:block ${
