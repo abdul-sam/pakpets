@@ -18,6 +18,7 @@ import Dropdown from "../utilities/Dropdown";
 import NavList from "./NavList";
 
 import { SellMenuItems } from "../../constants";
+import SellIcon from "../../assets/images/icons/sell.png";
  
  
 const Header = () => {
@@ -57,8 +58,9 @@ const Header = () => {
           </div>
           <Dropdown
             title='Sell'
+            icon={SellIcon}
             dropdownItems={SellMenuItems}
-            klasses="bg-indigo-600 text-white font-bold px-5 rounded-full hover:bg-indigo-800 hover:text-white"
+            klasses="bg-indigo-600 text-white font-bold px-5 py-3 rounded-full hover:bg-indigo-800 hover:text-white"
           />
           {/* <Button variant="gradient" size="sm">
             Sign In
@@ -92,6 +94,7 @@ const Header = () => {
           </div>
           <Dropdown
             title='Sell'
+            icon={SellIcon}
             dropdownItems={SellMenuItems}
             klasses="bg-blue-400 text-white font-bold px-5 rounded-full hover:bg-bule-800 hover:text-white"
           />

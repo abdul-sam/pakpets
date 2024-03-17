@@ -12,8 +12,8 @@ const Banner = () => {
         <div className="flex flex-col items-center justify-between gap-5 pt-6 lg:flex-row">
           <div className="flex-1 w-full lg:-mt-6">
             <Typography
-              variant="h1"
-              className="font-mono flex justify-center items-center text-6xl mb-10"
+              as="div"
+              className="font-mono flex justify-center items-center text-6xl mb-10 font-bold"
             >
               Find Your
               <Typography
@@ -25,7 +25,7 @@ const Banner = () => {
             </Typography>
 
             <Typography
-              variant="span"
+              as="span"
               className="text-xl text-gray-500"
             >
               PakPets is perfect place for your dream pets. Find your pets, shops & pet foods.
@@ -65,20 +65,21 @@ const Banner = () => {
                 </div>
               </form>
             </div>
+            <Typography
+              as="p"
+              className="font-bold mt-8"
+            >
+              Popular Searches:
+            </Typography>
             <div className="flex flex-wrap gap-3 mt-8 text-center justify-center items-center">
-              <Typography
-                variant="p"
-                className="font-bold"
-              >
-                Popular Searches:
-              </Typography>
               { 
                 PopularSearches && PopularSearches.map((search, index) => {
                   return (
                     <Typography
-                      variant="a"
+                      key={index}
+                      as="a"
                       href="#"
-                      className="bg-indigo-100 text-black px-4 py-1 rounded-full"
+                      className={Styles.pill}
                     >
                       {search.title}
                     </Typography>

@@ -30,11 +30,15 @@ const NavList = () => {
       >
         <ListItem className="flex items-center gap-2 py-2 pr-4 text-sm font-bold uppercase">Pet Shops</ListItem>
       </Typography>
-      <Dropdown
-        title={'Resources'}
-        dropdownItems={CategoriesDropdownList}
-        ulKlasses="grid grid-cols-3"
-      />
+      <Typography
+        as="a"
+        href="#"
+        variant="small"
+        color="blue-gray"
+        className="font-medium"
+      >
+        <ListItem className="flex items-center gap-2 py-2 pr-4 text-sm font-bold uppercase">Breeders</ListItem>
+      </Typography>
       <Dropdown
         title='Categories'
         dropdownItems={CategoriesDropdownList}
