@@ -90,7 +90,7 @@ export const PopularSearches = [
     title: "Parrot", 
   },
   {
-    title: "Dog",
+    title: "Swan",
   },
   {
     title: "Fish",

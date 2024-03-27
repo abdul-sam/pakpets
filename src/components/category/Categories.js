@@ -1,10 +1,15 @@
 import React from "react";
-import { PopularCategories } from "../../constants";
+// import { PopularCategories } from "../../constants";
 import Category from "./Category";
 import { Typography } from "@material-tailwind/react";
 import { Styles } from "../../styles";
 
+import useCategories from "../../hooks/useCategories";
+
 const Categories = () => {
+
+  const categories = useCategories();
+ 
   return (
     <div className="py-14 lg:py-20">
       <div className="w-full max-w-screen-2xl mx-auto px-5">
@@ -25,7 +30,7 @@ const Categories = () => {
         </div>
         <div className="grid gap-8 mt-10 md:grid-cols-2 lg:grid-cols-6">
           {
-            PopularCategories && PopularCategories.map((category, index) => <Category key={index} category={category} />)
+            categories && categories.map((category, index) => <Category key={index} category={category} />)
           }
         </div>
       </div>
