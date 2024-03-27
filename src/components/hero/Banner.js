@@ -2,10 +2,15 @@ import React from "react";
 import { MagnifyingGlassIcon, MapPinIcon } from "@heroicons/react/24/outline";
 import { Button, Typography } from "@material-tailwind/react";
 
-import { PopularSearches } from "../../constants";
+// import { PopularSearches } from "../../constants";
 import { Styles } from "../../styles";
+import useFilters from "../../hooks/useFilters";
 
 const Banner = () => {
+
+  const PopularSearches = useFilters();
+
+  
   return (
     <div className="bg-gray-50 pt-20">
       <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-40 lg:px-12">
