@@ -4,6 +4,7 @@ import TopNavbar from "../components/navbar/TopNavbar";
 import Banner from "../components/hero/Banner";
 import Categories from "../components/category/Categories";
 import Listings from "../components/listing/Listings";
+import ListingWrapper from "../components/listing/ListingWrapper";
 
 const Home = () => {
   return (
@@ -12,7 +13,7 @@ const Home = () => {
       <Header/>
       <Banner/>
       <Categories/>
-      <Listings/>
+      <ListingWrapper/>
     </>
   );
 }

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { listCategories } from "../services/category";
-import { PopularCategories } from "../constants";
+import { Categories } from "../constants/categories";
 
 const useCategories = () => {
   const [categories, setCategories] = useState([]);
@@ -19,7 +19,7 @@ const useCategories = () => {
     //     console.error(error);
     //   });
 
-    setCategories(PopularCategories);
+    setCategories(Categories);
   };
 
   return categories;

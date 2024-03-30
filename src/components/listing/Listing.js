@@ -2,6 +2,7 @@ import React from "react";
 import { MapPinIcon, HeartIcon } from "@heroicons/react/24/outline";
 import { Typography } from "@material-tailwind/react";
 import { styles, theme } from "../../styles";
+import { formateCurrency } from "../utilities/Utility";
 
 const Listing = ({ listing }) => {
   return(
@@ -58,9 +59,9 @@ const Listing = ({ listing }) => {
         </div>
         <Typography
           as="span"
-          className={`p-2 text-center bg-${theme.color}-50 text-${theme.color}-800 font-semibold rounded-full mt-5 text-2xl`}
+          className={`p-2 text-center bg-${theme.color}-50 text-${theme.color}-800 font-semibold rounded-full mt-5 text-2xl mb-3`}
         >
-          Rs. {listing.price}
+          Rs. {formateCurrency(listing.price)}
         </Typography>
       </div>
     </div>

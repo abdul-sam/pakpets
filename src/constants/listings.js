@@ -3,6 +3,22 @@
 // import TurtleImage from "./assets/images/turtle.png";
 import SwanImage from '../assets/images/swan.png'
 
+
+const categories = [
+"Parrot",
+"Finch",
+"Dove",
+"Duck",
+"Fish",
+"Horse",
+"Hen",
+"Rabbit",
+"Ostrich",
+"Turkey",
+"Cow",
+"Goat",
+]
+
 const listing = {
   "listingId": "123456789",
   "petType": "Dog",
