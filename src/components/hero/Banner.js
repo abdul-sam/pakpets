@@ -84,7 +84,7 @@ const Banner = () => {
                       key={index}
                       as="a"
                       href="#"
-                      className={Styles.pill}
+                      className={`${Styles.pill.default} ${Styles.pill.indigo}`}
                     >
                       {search.title}
                     </Typography>

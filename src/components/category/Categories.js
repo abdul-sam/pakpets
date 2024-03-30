@@ -16,7 +16,7 @@ const Categories = () => {
         <div className="text-center">
           <Typography
             as="span"
-            className={`${Styles.pill} w-auto mb-8`}
+            className={`${Styles.pill.default} ${Styles.pill.indigo} w-auto mb-8 `}
           >
             Categories
           </Typography>
