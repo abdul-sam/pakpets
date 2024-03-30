@@ -1,11 +1,11 @@
 import React from "react";
 import { MapPinIcon, HeartIcon } from "@heroicons/react/24/outline";
 import { Typography } from "@material-tailwind/react";
-import { Styles } from "../../styles";
+import { styles, theme } from "../../styles";
 
 const Listing = ({ listing }) => {
   return(
-    <div className="relative w-full lg:mb-0 bg-white hover:shadow-md rounded-b-2xl border border-indigo-50">
+    <div className={`relative w-full lg:mb-0 bg-white hover:shadow-md rounded-b-2xl border border-${theme.color}-50`}>
       <Typography
           as="a"
           href={`/listing/${listing.id}`}
@@ -15,7 +15,7 @@ const Listing = ({ listing }) => {
       <HeartIcon className="absolute top-3 right-3 w-6 h-6"/>
       { listing.popular && <Typography
         as="span"
-        className="absolute top-0 left-0 text-indigo-800 bg-indigo-50 p-2 text-xs font-semibold rounded-ee-2xl"
+        className={`absolute top-0 left-0 text-${theme.color}-800 bg-${theme.color}-50 p-2 text-xs font-semibold rounded-ee-2xl`}
       >
         Popular
       </Typography>}
@@ -39,26 +39,26 @@ const Listing = ({ listing }) => {
         <div className="flex justify-center items-center">
           <Typography
             as="span"
-            className={`${Styles.pill.default} me-2`}
+            className={`${styles.pill.default} me-2`}
           >
             {listing.category}
           </Typography>
           <Typography
             as="span"
-            className={`${Styles.pill.default} me-2`}
+            className={`${styles.pill.default} me-2`}
           >
             {listing.age}
           </Typography>
           <Typography
             as="span"
-            className={`${Styles.pill.default}`}
+            className={`${styles.pill.default}`}
           >
             {listing.gender}
           </Typography>
         </div>
         <Typography
           as="span"
-          className={`p-2 text-center bg-indigo-50 text-indigo-800 font-semibold rounded-full mt-5 text-2xl`}
+          className={`p-2 text-center bg-${theme.color}-50 text-${theme.color}-800 font-semibold rounded-full mt-5 text-2xl`}
         >
           Rs. {listing.price}
         </Typography>

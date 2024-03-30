@@ -3,7 +3,7 @@ import { MagnifyingGlassIcon, MapPinIcon } from "@heroicons/react/24/outline";
 import { Button, Typography } from "@material-tailwind/react";
 
 // import { PopularSearches } from "../../constants";
-import { Styles } from "../../styles";
+import { styles, theme } from "../../styles";
 import useFilters from "../../hooks/useFilters";
 
 const Banner = () => {
@@ -23,7 +23,7 @@ const Banner = () => {
               Find Your
               <Typography
                 variant="h1"
-                className="font-mono text-6xl p-6 px-8 border-dashed border-2 border-indigo-600 rounded-full text-indigo-600 mx-4"
+                className={`font-mono text-6xl p-6 px-8 border-dashed border-2 border-${theme.color}-600 rounded-full text-${theme.color}-600 mx-4`}
               >
                 Dream Pets
               </Typography> in Pakistan
@@ -39,31 +39,31 @@ const Banner = () => {
               <form method="post">
                 <div className="flex flex-col w-full gap-4 md:gap-0 md:flex-row">
                   <div className="relative flex-1 ">
-                    <div className={`${Styles.icon.wrapper} pl-5`}>
-                      <MagnifyingGlassIcon className={`${Styles.icon.default}`}/>
+                    <div className={`${styles.icon.wrapper} pl-5`}>
+                      <MagnifyingGlassIcon className={`${styles.icon.default}`}/>
                     </div>
                     <input
                       type="text"
                       name="keyword"
                       placeholder="Pet Keyword"
-                      className={`${Styles.input.default} md:rounded-l-full`}
+                      className={`${styles.input.default} md:rounded-l-full`}
                     />
                   </div>
                   <div className="relative flex-1 ">
-                    <div className={`${Styles.icon.wrapper} pl-3.5`}>
-                      <MapPinIcon className={`${Styles.icon.default}`}/>
+                    <div className={`${styles.icon.wrapper} pl-3.5`}>
+                      <MapPinIcon className={`${styles.icon.default}`}/>
                     </div>
                     <input
                       type="text"
                       name="keyword"
                       placeholder="Location"
-                      className={`${Styles.input.default} md:border-l-transparent`}
+                      className={`${styles.input.default} md:border-l-transparent`}
                     />
                   </div>
                   <Button
                     type="submit"
                     size="lg"
-                    className="bg-indigo-600 text-white font-bold md:rounded-r-full"
+                    className={`bg-${theme.color}-600 text-white font-bold md:rounded-r-full`}
                   >
                     Search
                   </Button>
@@ -84,7 +84,7 @@ const Banner = () => {
                       key={index}
                       as="a"
                       href="#"
-                      className={`${Styles.pill.default} ${Styles.pill.indigo}`}
+                      className={`${styles.pill.default} ${styles.pill.indigo}`}
                     >
                       {search.title}
                     </Typography>

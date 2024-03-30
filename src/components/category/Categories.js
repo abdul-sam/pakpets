@@ -2,7 +2,7 @@ import React from "react";
 // import { PopularCategories } from "../../constants";
 import Category from "./Category";
 import { Typography } from "@material-tailwind/react";
-import { Styles } from "../../styles";
+import { styles } from "../../styles";
 
 import useCategories from "../../hooks/useCategories";
 
@@ -16,7 +16,7 @@ const Categories = () => {
         <div className="text-center">
           <Typography
             as="span"
-            className={`${Styles.pill.default} ${Styles.pill.indigo} w-auto mb-8 `}
+            className={`${styles.pill.default} ${styles.pill.indigo} w-auto mb-8 `}
           >
             Categories
           </Typography>

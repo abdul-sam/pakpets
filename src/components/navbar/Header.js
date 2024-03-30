@@ -3,10 +3,7 @@ import {
   Navbar,
   Collapse,
   Typography,
-  Button,
   IconButton,
-  List,
-  ListItem,
 } from "@material-tailwind/react";
 import {
   Bars3Icon,
@@ -19,6 +16,7 @@ import NavList from "./NavList";
 
 import { SellMenuItems } from "../../constants";
 import SellIcon from "../../assets/images/icons/sell.png";
+import { theme } from "../../styles";
  
  
 const Header = () => {
@@ -60,7 +58,7 @@ const Header = () => {
             title='Sell'
             icon={SellIcon}
             dropdownItems={SellMenuItems}
-            klasses="bg-indigo-600 text-white font-bold px-5 py-3 rounded-full hover:bg-indigo-800 hover:text-white"
+            klasses={`bg-${theme.color}-600 text-white font-bold px-5 py-3 rounded-full hover:bg-${theme.color}-800 hover:text-white`}
           />
           {/* <Button variant="gradient" size="sm">
             Sign In
@@ -96,7 +94,7 @@ const Header = () => {
             title='Sell'
             icon={SellIcon}
             dropdownItems={SellMenuItems}
-            klasses="bg-blue-400 text-white font-bold px-5 rounded-full hover:bg-bule-800 hover:text-white"
+            klasses={`bg-${theme.color}-400 text-white font-bold px-5 rounded-full hover:bg-${theme.color}-800 hover:text-white`}
           />
         </div>
       </Collapse>
