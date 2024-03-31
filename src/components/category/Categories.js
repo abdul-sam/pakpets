@@ -2,7 +2,7 @@ import React from "react";
 // import { PopularCategories } from "../../constants";
 import Category from "./Category";
 import { Typography } from "@material-tailwind/react";
-import { styles } from "../../styles";
+import { styles } from "../../styles/styles";
 
 import useCategories from "../../hooks/useCategories";
 

@@ -16,7 +16,7 @@ import NavList from "./NavList";
 
 import { SellMenuItems } from "../../constants";
 import SellIcon from "../../assets/images/icons/sell.png";
-import { theme } from "../../styles";
+import { theme } from "../../styles/styles";
  
  
 const Header = () => {
@@ -30,7 +30,7 @@ const Header = () => {
   }, []);
  
   return (
-    <Navbar className="mx-auto p-5 max-w-full xl:px-16 font-mono shadow-none border-b border-gray/80 sticky top-0 fixed z-10">
+    <Navbar className="mx-auto p-5 max-w-full xl:px-16 font-mono shadow-none border-b border-gray/80 sticky top-0 fixed z-[9999]">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"

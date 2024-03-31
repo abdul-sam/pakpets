@@ -1,6 +1,6 @@
 import { Typography } from "@material-tailwind/react";
 import React from "react";
-import { theme } from "../../styles";
+import { theme } from "../../styles/styles";
 
 const Category = ({ category }) => {
   return (

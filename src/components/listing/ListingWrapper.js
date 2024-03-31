@@ -14,6 +14,7 @@ const ListingWrapper = () => {
         linkText="View All"
         listings={popularListings}
         background="bg-gray-50"
+        carousel={true}
       />
 
       <Listings
@@ -21,7 +22,8 @@ const ListingWrapper = () => {
         link="/featured-listings"
         linkText="View All"
         listings={featuredListings}
-        background="bg-white-50"
+        background="bg-white"
+        carousel={false}
       />
     </>
   )

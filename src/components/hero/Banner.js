@@ -3,7 +3,7 @@ import { MagnifyingGlassIcon, MapPinIcon } from "@heroicons/react/24/outline";
 import { Button, Typography } from "@material-tailwind/react";
 
 // import { PopularSearches } from "../../constants";
-import { styles, theme } from "../../styles";
+import { styles, theme } from "../../styles/styles";
 import useFilters from "../../hooks/useFilters";
 
 const Banner = () => {

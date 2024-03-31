@@ -1,7 +1,7 @@
 import React from "react";
 import { MapPinIcon, HeartIcon } from "@heroicons/react/24/outline";
 import { Typography } from "@material-tailwind/react";
-import { styles, theme } from "../../styles";
+import { styles, theme } from "../../styles/styles";
 import { formateCurrency } from "../utilities/Utility";
 
 const Listing = ({ listing }) => {
@@ -16,13 +16,13 @@ const Listing = ({ listing }) => {
       <HeartIcon className="absolute top-3 right-3 w-6 h-6"/>
       { listing.popular && <Typography
         as="span"
-        className={`absolute top-0 left-0 text-${theme.color}-800 bg-${theme.color}-50 p-2 text-xs font-semibold rounded-ee-2xl`}
+        className={`text-${theme.color}-800 bg-${theme.color}-50 ${styles.tag.default}`}
       >
         Popular
       </Typography>}
       { listing.featured && <Typography
         as="span"
-        className={`absolute ${listing.popular ? 'top-10 left-0' : 'top-0 left-0'} text-red-600 bg-red-50 p-2 text-xs font-semibold rounded-ee-2xl`}
+        className={`${styles.tag.default} ${listing.popular ? 'top-10 left-0' : 'top-0 left-0'} text-red-600 bg-red-50`}
       >
         Featured
       </Typography>}

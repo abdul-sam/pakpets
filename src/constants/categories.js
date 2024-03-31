@@ -78,12 +78,7 @@ export const Categories = [
     name: "Turkey",
     image_url: TurkeyImage,
     total_ads: 42
-  },
-  {
-    name: "Turtle",
-    image_url: TurtleImage,
-    total_ads: 14
-  }, 
+  }
 ]
 
 export default {
