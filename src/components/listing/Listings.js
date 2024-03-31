@@ -1,8 +1,9 @@
 import React from "react";
 import { Typography } from "@material-tailwind/react";
+import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
 import Listing from "./Listing";
 import { styles } from "../../styles/styles";
-import { ArrowLongRightIcon } from "@heroicons/react/24/solid";
+import { theme } from "../../styles/styles";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -42,7 +43,7 @@ const Listings = ({ title, link, linkText, listings, background, carousel }) => 
             <Typography
               as="a"
               href={link}
-              className="flex font-bold mb-5 text-gray-600 float-right mt-2"
+              className={`flex font-bold mb-5 text-gray-600 float-right mt-2 bg-${theme.color}-50 p-3 px-4 rounded-full hover:bg-${theme.color}-100 hover:text-${theme.color}-900`}
             >
               { linkText }
               <ArrowLongRightIcon className="h-5 w-5 ml-2 mt-1"/>
