@@ -5,6 +5,7 @@ import Banner from "../components/hero/Banner";
 import Categories from "../components/category/Categories";
 import Listings from "../components/listing/Listings";
 import ListingWrapper from "../components/listing/ListingWrapper";
+import ShopsWrapper from "../components/shop/ShopsWrapper";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Banner/>
       <Categories/>
       <ListingWrapper/>
+      <ShopsWrapper/>
     </>
   );
 }

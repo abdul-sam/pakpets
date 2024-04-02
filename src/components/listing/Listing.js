@@ -31,7 +31,7 @@ const Listing = ({ listing }) => {
         <Typography
           as="a"
           href={`/listing/${listing.id}`}
-          className="text-lg font-semibold mb-1 hover:text-[#f27522] text-center truncate" 
+          className={`text-lg font-semibold mb-1 hover:text-${theme.color}-800 text-center truncate`} 
         >
           {listing.title}
 
