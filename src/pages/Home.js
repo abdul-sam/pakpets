@@ -6,6 +6,7 @@ import Categories from "../components/category/Categories";
 import ListingWrapper from "../components/listing/ListingWrapper";
 import ShopsWrapper from "../components/shop/ShopsWrapper";
 import BreedersWrapper from "../components/breeders/BreedersWrapper";
+import Footer from "../components/footer/Footer";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <ListingWrapper/>
       <ShopsWrapper/>
       <BreedersWrapper/>
+      <Footer/>
     </>
   );
 }

@@ -23,6 +23,9 @@ export const styles = {
   tag: {
     default: "absolute top-0 left-0 p-2 text-xs font-semibold rounded-ee-2xl",
   },
+  footer: {
+    wrapper: "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 p-5 sm:p-0",
+  }
 }
 
 export default {
