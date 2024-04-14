@@ -6,13 +6,16 @@ import { styles, theme } from "../../styles/styles";
 const Shop = ({ shop }) => {
   return(
     <div className={`w-full lg:mb-0 bg-white hover:shadow-md rounded-2xl border border-${theme.color}-50`}>
-      <Typography
-          as="span"
-          className="text-end justify-end flex"
-        >
-        <ShieldCheckIcon className="w-6 h-6 m-5 text-green-600"/>
-      </Typography>
-        <img src={shop.image_url} className="w-16 h-16 mb-5 rounded-full mx-auto"/>
+      {
+        shop.verified &&
+        <Typography
+            as="span"
+            className="text-end justify-end flex"
+          >
+          <ShieldCheckIcon className={`w-6 h-6 m-5 text-${theme.color}-600`}/>
+        </Typography>
+      }
+        <img src={shop.image_url} className={`w-16 h-16 mb-5 rounded-full mx-auto ${ !shop.verified ? 'mt-16' : ''}`}/>
       { shop.verified && <Typography
         as="span"
         className={`text-${theme.color}-800 bg-${theme.color}-50 ${styles.tag.default}`}
